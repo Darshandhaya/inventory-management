@@ -1,0 +1,101 @@
+.add-item-page {
+  padding: 20px;
+  margin-left: 250px; 
+  margin-top: 60px;  
+  max-width: 800px;
+  background-color: #f0f4f8;
+}
+
+.add-item-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-item-form input,
+.add-item-form textarea {
+  display: block;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.add-item-form button {
+  padding: 10px 15px;
+  background-color: #0d1b2a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-item-form button:hover {
+  background-color: #1b2c3a;
+}
+
+.add-item-page h2 {
+  margin-bottom: 20px;
+}
+/* Existing styles for .add-item-page, .add-item-form, etc. remain here */
+
+/* Add these new styles */
+.form-message {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #d4edda; /* Light green for success */
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.add-item-page h2 {
+  margin-bottom: 20px;
+}
+
+/* Styles for the sample items list */
+.sample-items-list {
+  list-style: none;
+  padding: 0;
+  display: grid; /* Use grid for a nice layout */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive columns */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.sample-item-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eee;
+  transition: transform 0.2s ease-in-out;
+}
+
+.sample-item-card:hover {
+  transform: translateY(-5px);
+}
+
+.sample-item-card h3 {
+  margin-top: 0;
+  color: #0d1b2a;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.sample-item-card p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 0.9em;
+}
+
+.sample-item-description {
+  font-style: italic;
+  color: #777;
+  font-size: 0.85em;
+  margin-top: 10px;
+  border-top: 1px dashed #eee;
+  padding-top: 10px;
+}

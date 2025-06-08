@@ -1,0 +1,106 @@
+/* Container for the entire page to center content and apply background */
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+
+  background: linear-gradient(to right, #00c6ff 0%, #0072ff 100%); /* A vibrant blue gradient */
+  
+}
+
+/* Container for the register form itself, making it appear as a card */
+.register-container {
+  background: rgba(255, 255, 255, 0.95); 
+  padding: 2.5rem; 
+  border-radius: 12px; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  max-width: 400px;
+  width: 90%;
+  animation: fadeIn 1s ease-in-out; 
+  text-align: center; 
+}
+
+.register-title {
+  text-align: center;
+  margin-bottom: 2rem; 
+  color: #333; 
+  font-size: 2em;
+  font-weight: 700;
+}
+
+/* Styling for input fields within the form */
+.register-form input {
+  display: block; 
+  width: calc(100% - 20px); 
+  padding: 12px 10px; 
+  margin-bottom: 1.2rem; 
+  border: 1px solid #ddd;
+  border-radius: 8px; 
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+.register-form input:focus {
+  border-color: #007bff; 
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+/* Styling for the register button */
+.register-button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px; 
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 600;
+  width: 100%; 
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 1rem; 
+}
+
+.register-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); 
+}
+
+/* Styling for the login link */
+.login-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  margin-top: 1.5rem; 
+  display: block; 
+}
+
+.login-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Keyframe animation for fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Message display styles (for success/error messages) */
+.form-message {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  color: #333; 
+  background-color: #e0f2f7; 
+  border: 1px solid #b3e0ed;
+}
