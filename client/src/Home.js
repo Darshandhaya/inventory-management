@@ -57,7 +57,7 @@ function Home() {
     <div className="empty-state">
       <h2>No items found in your inventory.</h2>
       <p>Start by adding new items to manage your stock efficiently.</p>
-      <button onClick={() => navigate('/AddItems')}>Add Your First Item</button>
+      <button onClick={() => navigate('/additem')}>Add Your First Item</button>
     </div>
   );
 
